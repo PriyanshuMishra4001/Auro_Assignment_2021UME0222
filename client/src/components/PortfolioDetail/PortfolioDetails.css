@@ -1,0 +1,71 @@
+.portfolio-details {
+    max-width: 800px;
+    margin: 150px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .header h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .header .email {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .content {
+    margin-top: 20px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section h2 {
+    font-size: 22px;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+  }
+  
+  .section p {
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .section ul li {
+    padding: 8px 0;
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .section ul li strong {
+    color: #000;
+  }
+  
+  .section ul li a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .section ul li a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,142 @@
+/* General Navbar Styling */
+.navbar {
+    color: white; /* Ensures text inside navbar is white */
+    font-family: 'Jost', sans-serif;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Logo */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white; /* Set logo text color to white */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo {
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white; /* Set link text to white */
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu .active {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+/* Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: white; /* Ensure button text is white */
+}
+
+.btn.primary {
+    background: #007bff;
+}
+
+.btn.primary:hover {
+    background: #0056b3;
+}
+
+.btn.secondary {
+    background: #28a745;
+}
+
+.btn.secondary:hover {
+    background: #218838;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 24px;
+    height: 24px;
+    color: white; /* Set menu icon color to white */
+}
+
+.btn.logout {
+    background: #dc3545;
+    color: white;
+  }
+  
+  .btn.logout:hover {
+    background: #c82333;
+  }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #24243e; /* Dark background for mobile menu */
+        border-top: 1px solid #ddd;
+        padding: 10px 0;
+    }
+
+    .nav-menu li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+}
